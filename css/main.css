@@ -1,0 +1,435 @@
+/* ## Global style */
+:root{
+--color-primary:#e65f78;
+--animation-duration:400ms;
+--color-description: #6c757d!important;
+scroll-padding-top: 3.4375rem;
+
+
+}
+
+body{
+    font-family:  'Nunito Sans', sans-serif;
+    overflow-x: hidden !important;
+   
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+span,a{
+    display: inline-block;
+}
+img{
+  display: block;
+}
+
+  ul{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+  }
+
+  abbr[title]{
+   
+    text-decoration: none;
+  }
+
+  
+  
+
+
+.btn-outline-dwonload{
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #fff;
+ --bs-btn-padding-x: 2.1875rem;
+ --bs-btn-padding-y: .9375rem;
+  --bs-btn-border-radius: 100vh;
+}
+
+.text-main{
+    color: var(--color-primary);
+}
+.bg-section{
+    background-color: #e9e9e9;
+}
+
+
+.description{
+    max-width: 470px;
+    color: var(--color-description);
+   
+}
+
+.fit-content{
+    width: fit-content;
+}
+
+.btn-custm{
+    
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-border-color:var(--color-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-border-color: var(--color-primary);
+    
+
+
+}
+
+
+/* ===========vieu-port-icon=================================== */
+ 
+.vh-icon{
+    position: fixed;
+ }
+ .load-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    background-color:  #2b2424;
+    position: absolute;
+    top:200px;
+    left: 0px;
+    z-index: 999999;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+} 
+
+.up-home{
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 95vh;
+    left: 2vh;
+    z-index: 99999999999;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+
+}
+/* =======================Navbar-section===================================================== */
+.navbar-nav .nav-link.active {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+
+
+/* =======================Home_section================================ */
+.home{
+    background-image:linear-gradient(#000a,#000a), url(../images/header-bg.jpg);
+    background-size: cover;
+}
+  
+
+.home .container h2::after{
+    content: '';
+    animation:typing 3s 1s infinite;
+    -webkit-animation:typing 3s 1s infinite;
+}
+ @keyframes typing {
+  0%{
+    content: '';
+  }
+  
+  1.3%{
+    content: 'A';
+  }
+  7.3%{
+    content: 'A P|';
+  }
+
+  14.3%{
+    content: 'A Ph';
+  }
+
+  21.3%{
+    content: 'A Pho|';
+  }
+  28.3%{
+    content: 'A Photo';
+  }
+  35.3%{
+    content: 'A Photo|';
+  }
+
+  42.3%{
+    content: 'A Phot';
+  }
+
+  49.3%{
+    content: 'A Pho|';
+  }
+
+  56.3%{
+    content: 'A Ph';
+  }
+  61.3%{
+    content: 'A P|';
+  }
+  62.3%{
+    content: 'A |';
+  }
+
+  70.3%{
+    content: 'A G|';
+  }
+
+  77.3%{
+    content: 'A Gr';
+  }
+
+  81.3%{
+    content: 'A Grap';
+  }
+
+  88.3%{
+    content: 'A Graphic|';
+  }
+
+  91.3%{
+    content: 'A Graphic D';
+  }
+  
+  95.3%{
+    content: 'A Graphic Designer |';
+  }
+ 
+
+
+ 98.3%{
+    content: 'A Kerri  |';
+  }
+
+  100%{
+    content: 'A Kerri Deo.  |';
+  }
+ 
+ }
+
+header .container{
+    padding-top: 55px;
+}
+
+.scrol-down{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    position: relative;
+    z-index: 5555;
+    
+   
+}
+
+.scrol{
+    position: absolute;
+    bottom: 5vh;
+}
+.scrol-down::before{
+    content: "";
+    width: 5px;
+    height: 10px;
+    border: 1px solid #fff;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.social-media li  {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color var(--animation-duration), ;
+    -webkit-transition: color var(--animation-duration), ;
+    -moz-transition: color var(--animation-duration), ;
+    -ms-transition: color var(--animation-duration), ;
+    -o-transition: color var(--animation-duration),border-color var(--animation-duration) ;
+}
+
+.social-media li:hover  {
+    
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* ================================================portoflio============================= */
+
+
+.content::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000a;
+    position: absolute;
+    opacity: 0;
+    transition:opacity var(--animation-duration) ;
+    -webkit-transition:opacity var(--animation-duration) ;
+    -moz-transition:opacity var(--animation-duration) ;
+    -ms-transition:opacity var(--animation-duration) ;
+    -o-transition:opacity var(--animation-duration) ;
+} 
+
+ .content:hover.content::before{
+opacity: 1;
+}
+.layer{
+    
+    top:100% ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top var(--animation-duration);
+    -webkit-transition: top var(--animation-duration);
+    -moz-transition: top var(--animation-duration);
+    -ms-transition: top var(--animation-duration);
+    -o-transition: top var(--animation-duration);
+    color: black;
+   
+
+    
+} 
+
+ .content:hover .layer {
+    top: 0;
+     
+}
+
+.portoflio ul li button {
+    color: #000;
+}
+
+.portoflio ul li button:hover {
+    color: #fff;
+    background-color:var(--color-primary);
+
+}
+.nav-pills .nav-link.active, .nav-pills .sh {
+    color: #fff;
+    background-color:var(--color-primary);
+}
+
+.nav-pills .nav-link {
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    padding: 10px 25px;
+}
+
+/* ======================services================================== */
+.inner-services::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-primary);
+    position: absolute;
+    right: 45%;
+    bottom: 65%;
+    transition:transform var(--animation-duration) ;
+    -webkit-transition:transform var(--animation-duration) ;
+    -moz-transition:transform var(--animation-duration) ;
+    -ms-transition:transform var(--animation-duration) ;
+    -o-transition:transform var(--animation-duration) ;
+}
+
+.inner-services:hover.inner-services::after{
+    transform: scalex(1.8);
+    -webkit-transform: scalex(1.8);
+    -moz-transform: scalex(1.8);
+    -ms-transform: scalex(1.8);
+    -o-transform: scalex(1.8);
+}
+   
+
+/* =======================Hire_me_section=========================================== */
+.hir-me-section{
+padding-block: 100px;
+}
+
+/* =====================================client======================================================= */
+.carousel-indicators [data-bs-target]{
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-primary);
+    
+}
+
+.carousel-indicators [data-bs-target].active{
+    width: 40px;
+}
+
+/* ========================Contact================================== */
+.contact .form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--color-primary);
+    
+    box-shadow: var(--color-primary);
+  }
+
+ .contact .form-control textarea{
+    max-height: 350px;
+    min-height: 15px;
+ }
+
+ /* ====================================footer=============================== */
+ footer .social-media li {
+    width: 50px;
+    height: 50px;
+    background-color:rgba(241, 241, 241, 0.08);
+    border: none;
+ }
+ footer .social-media li a {
+    color: #999;
+ }
+
+ footer{
+    background-color: #212121 !important;
+ }
+
+
+ 
