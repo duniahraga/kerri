@@ -1,0 +1,15 @@
+@media screen and (max-width: 400px){
+    .scrol{
+        display: none;
+        position: unset;
+    }
+
+
+    .scrol-down::before{
+        content: "";
+        width: none;
+        height: none;
+        
+    }
+    
+}
